@@ -4,16 +4,17 @@ go_version=1.4
 
 ## Install Go Lang
 DIR=$(pwd)
-cd ~
+
+cd $HOME
 curl -sL -o gimme https://raw.githubusercontent.com/meatballhat/gimme/master/gimme
 chmod +x gimme
 ./gimme $go_version > go_env.sh
-chmod +x go_env.sh
-./go_env.sh
+source ./go_env.sh
 
 cd $DIR
 
 
+echo "GOPATH=$(pwd)"
 export GOPATH=$(pwd)
 export PATH=$GOPATH/bin:$PATH
 
