@@ -9,8 +9,7 @@ cd $HOME
 curl -sL -o gimme https://raw.githubusercontent.com/meatballhat/gimme/master/gimme
 chmod +x gimme
 ./gimme $go_version > go_env.sh
-source ./go_env.sh
-
+. ./go_env.sh
 cd $DIR
 
 
