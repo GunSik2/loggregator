@@ -1,7 +1,7 @@
 #/bin/bash
 
 # install Go tools
-export GOPAHT=`pwd`
+export GOPATH=`pwd`
 go get golang.org/x/tools/cmd/vet
 go get golang.org/x/tools/cmd/cover
 
