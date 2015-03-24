@@ -1,6 +1,5 @@
 #/bin/bash
 
-
 go_version=1.4
 
 ## Install Go Lang
