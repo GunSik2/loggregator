@@ -1,9 +1,20 @@
 #/bin/bash
 
-echo `pwd`
+
+## Install Go Lang
+#GOLANG=go1.3.3.linux-amd64.tar.gz
+GOLANG=go1.4.1.linux-amd64.tar.gz
+
+wget https://storage.googleapis.com/golang/$GOLANG
+tar -xf $GOLANG  && rm $GOLANG
+#sudo mv go /usr/local
 
 # install Go tools
 export GOPATH=`pwd`
+export PATH=$GOPATH/go/bin:$GOPATH/bin:$PATH
+
+
+## Install Go tool
 go get golang.org/x/tools/cmd/cover golang.org/x/tools/cmd/vet
 #go get code.google.com/p/go.tools/cmd/vet
 #go get code.google.com/p/go.tools/cmd/cover
@@ -16,4 +27,6 @@ go install -v github.com/onsi/ginkgo/ginkgo
 git submodule update --init --recursive
 
 # running tests
-PATH=/usr/local/gopath/bin:$PATH ./bin/test
+./bin/test
+# PATH=/usr/local/gopath/bin:$PATH ./bin/test
+
