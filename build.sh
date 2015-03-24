@@ -2,6 +2,7 @@
 
 echo `pwd`
 
+
 # install Go tools
 export GOPATH=`pwd`
 go get golang.org/x/tools/cmd/cover golang.org/x/tools/cmd/vet
