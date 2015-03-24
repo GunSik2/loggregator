@@ -27,6 +27,8 @@
 #git clone https://github.com/cloudfoundry/loggregator
 #cd loggregator
 
+echo `pwd`
+
 # install Go tools
 export GOPAHT=`pwd`
 go get golang.org/x/tools/cmd/vet
