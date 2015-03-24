@@ -2,8 +2,10 @@
 
 # install Go tools
 export GOPATH=`pwd`
-go get golang.org/x/tools/cmd/vet
-go get golang.org/x/tools/cmd/cover
+#go get golang.org/x/tools/cmd/vet
+#go get golang.org/x/tools/cmd/cover
+go get code.google.com/p/go.tools/cmd/vet
+go get code.google.com/p/go.tools/cmd/cover
 
 go get -v github.com/mattn/goveralls
 go get -v github.com/onsi/ginkgo
