@@ -1,17 +1,19 @@
 #/bin/bash
 
 
+
 ## Install Go Lang
-#GOLANG=go1.3.3.linux-amd64.tar.gz
-GOLANG=go1.4.1.linux-amd64.tar.gz
+GOLANG=go1.3.3.linux-amd64.tar.gz
+#GOLANG=go1.4.1.linux-amd64.tar.gz
 
 wget https://storage.googleapis.com/golang/$GOLANG
 tar -xf $GOLANG  && rm $GOLANG
 #sudo mv go /usr/local
 
 # install Go tools
-export GOPATH=`pwd`
-export PATH=$GOPATH/go/bin:$GOPATH/bin:$PATH
+export WORK_DIR=`pwd`
+export GOPATH=$WORK_DIR
+export PATH=$WORK_DIR/go/bin:$GOPATH/bin:$PATH
 
 
 ## Install Go tool
