@@ -1,3 +1,4 @@
+#!/bin/bash
 # GoLang installation
 
 #echo "install basic requirements"
