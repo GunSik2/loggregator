@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "HOME=$HOME"
 # GoLang installation
 
 #echo "install basic requirements"
